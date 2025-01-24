@@ -2,6 +2,7 @@
 - name: Install and configure Kafka
   hosts: kafka_nodes
   become: yes
+  become_method: su
   tasks:
     - name: Install Java
       apt:
